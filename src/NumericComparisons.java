@@ -39,12 +39,12 @@ public class NumericComparisons {
 
     private static boolean is_Factor(int num1, int num2) {
 
-        return num1/ num2 == num2 ;
+        return num1 % num2 == 0 ;
     }
 
     private static boolean is_Multiple(int num1, int num2) {
 
-        return num2/num1 == num1 ;
+        return num2 % num1 == 0 ;
     }
 
 

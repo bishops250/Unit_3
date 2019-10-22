@@ -5,47 +5,46 @@ public class NumericComparisons {
 
     private static boolean is_Odd(int num) {
         return num % 2 != 0;
-
     }
 
     private static boolean is_Even(int num) {
-        return num % 2 != 1 ;
+        return num % 2 == 0 ;
 
     }
 
     private static boolean is_Positive(int num) {
 
-        return num
+        return num >=0;
     }
 
     private static boolean is_Negative(int num) {
 
-        return num
+        return num <=0;
     }
 
     private static boolean is_Zero(int num) {
 
-        return num
+        return num == 0;
     }
 
     private static boolean is_Non_Positive(int num) {
 
-        return num
+        return num <=0;
     }
 
     private static boolean is_Non_Negative(int num) {
 
-        return num
+        return num >= 0;
     }
 
-    private static boolean is_Factor(int num) {
+    private static boolean is_Factor(int num1, int num2) {
 
-        return num
+        return num1/ num2 == num2 ;
     }
 
-    private static boolean is_Multiple(int num) {
+    private static boolean is_Multiple(int num1, int num2) {
 
-        return num
+        return num2/num1 == num1 ;
     }
 
 
@@ -56,12 +55,22 @@ public class NumericComparisons {
         System.out.println("Please enter the number you would like to be determined as either Odd or even: ");
         int num = user_input.nextInt();
 
-        System.out.println("Please enter the number you would like to find the multiples and factors of: ");
+        System.out.println(num + " is Odd: " + is_Odd(num));
+        System.out.println(num + " is Even: " + is_Even(num));
+        System.out.println(num + " is Positive: " + is_Positive(num));
+        System.out.println(num + " is Negative: " + is_Negative(num));
+        System.out.println(num + " is Non-Negative: " + is_Non_Negative(num));
+        System.out.println(num + " is Non-Positive: " + is_Non_Positive(num));
+        System.out.println(num + " is Zero: " + is_Zero(num));
+
+
+        System.out.println("Please enter the number you would like to multiples of ");
         int num2 = user_input.nextInt();
 
-        is_Odd(num);
+        System.out.println("Please enter the your guess of factor of the multiple: " + num2);
+        int num3 = user_input.nextInt();
 
-        System.out.println(num + "is odd:" + is_Odd(num));
+
 
 
     }

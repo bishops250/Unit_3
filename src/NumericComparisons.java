@@ -68,7 +68,10 @@ public class NumericComparisons {
         int num2 = user_input.nextInt();
 
         System.out.println("Please enter the your guess of factor of the multiple: " + num2);
-        int num3 = user_input.nextInt();
+        int num1 = user_input.nextInt();
+
+        System.out.println(num2 + "Is a multiple: " + is_Multiple(num1,num2));
+        System.out.println(num1 + "Is a factor: " + is_Factor(num1,num2));
 
 
 

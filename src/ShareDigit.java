@@ -18,7 +18,6 @@ public class ShareDigit {
         }
 
         else {
-
             return false;
         }
 

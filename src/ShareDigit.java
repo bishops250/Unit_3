@@ -3,21 +3,26 @@ public class ShareDigit {
 
     private static Boolean true_digit (int num1, int num2) {
 
-        if () {
-            
+        if (num1==num2/10) {
+
             return true;
         }
 
-        else if {
+        else if (num1%0==num2%10) {
+
+            return true;
+        }
+        else if (num1/10==num2/10) {
+
+            return true;
+        }
+
+        else {
 
             return false;
         }
-        else if {
 
-            return false;
         }
-
-    }
 
 
     public static void main(String[]args) {

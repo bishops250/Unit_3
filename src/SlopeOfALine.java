@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class SlopeOfALine {
 
-    private static String slope(int x1, int y1, int x2, int y2) {
+    public static String slope(int x1, int y1, int x2, int y2) {
 
         double slope = (y2 - y1) / (x2 - x1);
 

@@ -3,7 +3,7 @@ public class ShareDigit {
 
     public static Boolean numbers (int num1, int num2) {
 
-        if (num1==num2/10) {
+        if (num1/10==num2/10) {
 
             return true;
         }
@@ -12,7 +12,12 @@ public class ShareDigit {
 
             return true;
         }
-        else if (num1/10==num2/10) {
+        else if (num1/10==num2%10) {
+
+            return true;
+        }
+
+        else if (num1%10== num2/10) {
 
             return true;
         }

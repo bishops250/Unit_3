@@ -1,38 +1,29 @@
 import java.util.Scanner;
 
 public class RightTriangle {
-    public static String isTriangle(int a,int b,int c) {
+    public static Boolean isTriangle(int a,int b,int c) {
 
-        if((Math.pow(a,2)+Math.pow(b,2))==Math.pow(c,2)) {
-
-            return "The side lengths of "+a+", "+b+", and " + c + " form a right triangle";
+        if (a + c < b && b + c < a && a + b < c) {
+            return false;
         }
+        else if (a + c > b && b + c > a && a + b > c) {
 
-        else if (a+c<b && b+c<a && a+b<c) {
-            return "The side lengths of "+a+", "+b+", and " + c + " do not form a triangle";
+            return true;
         }
-        else if(a+c>b && b+c>a && a+b>c) {
-
-            return "The side lengths of "+a+", "+b+", and " + c + " form a triangle, but it is not a right triangle";
-
-        }
-        else
-            return null;
+        else return false;
     }
 
-   /* public static String isRight(int a, int b, int c) {
-
-        if((Math.pow(a,2)+Math.pow(b,2))==Math.pow(c,2)) {
-
-            return "The side lengths of "+a+", "+b+", and " + c + " form a right triangle";
-        }
-
-        else
-            return null;
 
 
+    public static Boolean isRight(int a, int b, int c) {
 
-    }*/
+        if((Math.pow(a,2)+Math.pow(b,2))==Math.pow(c,2))
+
+            return true;
+
+        else return false;
+
+    }
 
     public static void main(String[]args) {
 

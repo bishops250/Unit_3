@@ -35,7 +35,6 @@ public class RockPaperScissors {
     }
 
     public static String getComputerChoice() {
-        String
         double random_chance=(int)Math.random()*3;
         String computer_choice;
 
@@ -53,29 +52,48 @@ public class RockPaperScissors {
     }
 
     public static String whoWins(String computer, String person) {
+        String computer_wins="The computer win!";
+        String user_wins="\nYou win!";
+        String tie="You Tied!";
+        String the_game_winner;
+
 
         if (getComputerChoice()==getUserChoice()) {
-            return "You chose " + getComputerChoice()+".\n"+ "The computer chose " + getComputerChoice()+"\nYou Tied!";
-        }
-        else if (getUserChoice()=="rock" && getComputerChoice()=="scissors" ) {
-            return "You chose " + getComputerChoice()+".\n"+ " The computer chose " + getComputerChoice()+ "\nYou win!";
-        }
-        else if(getComputerChoice()=="rock" && getUserChoice()=="scissors" ) {
-            return "You chose " + getComputerChoice() + ".\n" + " The computer chose " + getComputerChoice() +
-                    "\nThe computer win!";
+           the_game_winner = tie;
         }
 
-        else if(getUserChoice()=="paper" && getComputerChoice()=="scissors" ) {
-                return "You chose " + getComputerChoice() + ".\n" + " The computer chose " + getComputerChoice() +
-                        "\nThe computer wins!";
+        else if (getUserChoice()=="rock" && getComputerChoice()=="scissors" ) { /*User chooses Rock &
+             Computer chooses Scissors, Winner = User*/
+          the_game_winner = user_wins;
+        }
+
+        else if(getComputerChoice()=="rock" && getUserChoice()=="scissors" ) {/*User chooses Rock &
+             Computer chooses Scissors, Winner = User*/
+        the_game_winner= computer_wins;
+        }
+
+
+        else if(getUserChoice()=="paper" && getComputerChoice()=="scissors" ) {/*User chooses Rock &
+             Computer chooses Scissors, Winner = User*/
+
             }
 
-            else if(getComputerChoice()=="paper" && getUserChoice()=="scissors" ) {
-                return "You chose " + getComputerChoice() + ".\n" + " The computer chose " + getComputerChoice() +
-                        "\nThe computer wins!";
+            else if(getComputerChoice()=="paper" && getUserChoice()=="scissors" ) {/*User chooses Rock &
+             Computer chooses Scissors, Winner = User*/
+
             }
 
-        else if(getUserChoice()=="paper" && getComputerChoice()== )
+        else if(getUserChoice()=="paper" && getComputerChoice()== ) {/*User chooses Rock &
+             Computer chooses Scissors, Winner = User*/
+
+        }
+
+        else /*User chooses Rock & Computer chooses Scissors, Winner = User*/
+
+
+            return "You chose " + getComputerChoice()+".\n"+ "The computer chose " + getComputerChoice()
+                    +the_game_winner ;
+
     }
 
 

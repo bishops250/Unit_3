@@ -60,7 +60,7 @@ public class RockPaperScissors {
     The variables allow me to only have one return statement and not have to rewrite who wins multiple times.
      */
     public static String whoWins(String computer, String person) {
-        String computer_wins = "\nThe computer win!";
+        String computer_wins = "\nThe computer wins!";
         String user_wins = "\nYou win!";
         String the_game_winner;
 
@@ -90,15 +90,14 @@ public class RockPaperScissors {
             return "Invalid input";
         }
 
-        return "You chose " + getUserChoice() + ".\n" + "The computer chose " + getComputerChoice()
-                + the_game_winner;
+        return "You chose " + person + ".\n" + "The computer chose " + computer
+                +"."+ the_game_winner;
     }
 
 
 
     public static void main(String[] args) {
-        getUserChoice();
-       getComputerChoice();
+
        String user_choice= getUserChoice();
        String computer_choice = getComputerChoice();
        System.out.println(whoWins(computer_choice,user_choice));

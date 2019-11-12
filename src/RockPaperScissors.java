@@ -68,25 +68,32 @@ public class RockPaperScissors {
         if (computer.equals(person)) {  /*The User and Computer choose the same action.So it sets the Winner
         as a tie */
             the_game_winner =  "\nYou tied!";
-        } else if (person.equals("rock") && computer.equals("scissors")) { /*User chooses Rock &
+        }
+        else if (person.equals("rock") && computer.equals("scissors")) { /*User chooses Rock &
              Computer chooses Scissors, Winner = User*/
             the_game_winner = user_wins;
-        } else if (computer.equals("rock") && person.equals("scissors")) {/*Computer chooses Rock &
+        }
+        else if (computer.equals("rock") && person.equals("scissors")) {/*Computer chooses Rock &
              Person chooses Scissors, Winner = Computer */
             the_game_winner = computer_wins;
-        } else if (person.equals("paper") && computer.equals("scissors")) {/*User chooses Paper &
+        }
+        else if (person.equals("paper") && computer.equals("scissors")) {/*User chooses Paper &
              Computer chooses Scissors, Winner = computer*/
             the_game_winner = computer_wins;
-        } else if (computer.equals("paper") && person.equals("scissors")) {/*Computer chooses Paper &
+        }
+        else if (computer.equals("paper") && person.equals("scissors")) {/*Computer chooses Paper &
              Person chooses Scissors, Winner = User*/
             the_game_winner = user_wins;
-        } else if (person.equals("rock") && computer.equals("paper")) {/*User chooses Rock &
+        }
+        else if (person.equals("rock") && computer.equals("paper")) {/*User chooses Rock &
              Computer chooses paper, Winner = Computer*/
             the_game_winner = computer_wins;
-        } else if (computer.equals("rock") && person.equals("paper")) {/*Computer chooses Rock &
+        }
+        else if (computer.equals("rock") && person.equals("paper")) {/*Computer chooses Rock &
              Users chooses Paper, Winner = User*/
             the_game_winner = user_wins;
-        } else {/*User chooses Rock & Computer chooses Scissors, Winner = User*/
+        }
+        else {/*User chooses Rock & Computer chooses Scissors, Winner = User*/
             return "Invalid input";
         }
 
